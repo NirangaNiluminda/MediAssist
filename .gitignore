@@ -1,0 +1,40 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# Environment & secrets
+.env
+
+# Data (download locally — see data/README.md)
+data/raw/
+data/processed/
+
+# Model weights (download or train locally — see models/README.md)
+models/*.bin
+models/*.pt
+models/*.safetensors
+models/*.ckpt
+models/bart_meqsum/
+models/biobert_triage*/
+models/fasttext_med.bin
+models/rag_index.faiss
+models/rag_chunks.pkl
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Experiment tracking
+wandb/
+runs/
+mlruns/
+
+# Build
+dist/
+build/
